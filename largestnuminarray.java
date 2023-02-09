@@ -15,7 +15,17 @@ public class largestnuminarray {
 		System.out.println("The lergest number is:"+a[a.length-1]);
 		System.out.println("The smallest number is:"+a[0]);
 		*/
-		
+		int small=a[0],large=a[0];
+		for(int i=0;i<a.length;i++) {
+			if(a[i]>large) {
+				large=a[i];
+				
+			}
+			else if(a[i]<small)
+				small=a[i];
+		}
+		System.out.println(large);
+		System.out.println(small);
 	}
 
 }

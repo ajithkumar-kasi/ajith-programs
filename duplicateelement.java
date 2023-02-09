@@ -1,6 +1,6 @@
 
 public class duplicateelement {
-	public static int removeduplicates(int a[], int n)
+	/*public static int removeduplicates(int a[], int n)
 		{
 			if (n == 0 || n == 1) {
 				return n;
@@ -25,17 +25,27 @@ public class duplicateelement {
 			}
 
 			return j;
-		}
+		}*/
 		public static void main(String[] args)
 		{
-			int a[] = { 1, 1, 2, 2, 2 };
+			int a[] = { 1, 1, 2,4,5,7,8,5,2,2,2 };
 			int n = a.length;
 
-			n = removeduplicates(a, n);
+			/*n = removeduplicates(a, n);
 
 			// Printing The array elements
 			for (int i = 0; i < n; i++)
 				System.out.print(a[i] + " ");
+		
+		*/
+			
+			for(int i=0;i<n;i++) {
+				for(int j=i+1;j<n;j++) {
+					if(a[i]==a[j]) 
+						System.out.println(a[j]);
+				}
+			}
 		}
+		
 	}
 

@@ -74,7 +74,7 @@ public class duplicateelement {
 	
 	
 	
-	 
+	 /*
 	
 	
 	static void findDuplicates(int arr[], int len)
@@ -130,5 +130,42 @@ public class duplicateelement {
 	    }
 	
 		}  
+	*/
+	
+	
+	 public static void main(String[] args)
+	    {
+	 
+	        int arr[] = { 12, 11, 40, 12, 5, 6, 5, 12, 11 };
+	        int n = arr.length;
+	       
+	        
+	        int a[]=new int[10];
+	        
+	        for(int i=0;i<n;i++) {
+	        	for(int j=i+1;j<n;j++) {
+	        		if(a[i]==a[j]) {
+	        			break;
+	        		}else {
+	        			a[i]=arr[i];
+	        		}
+	        		
+	        	}
+	        }for(int x:a) {
+	        	 System.out.println(x);
+	        }
+	       
+	    
+	    
+	    
+	    
+	    }}
+	
+	
+	
+	
+	
+	
+	
 	
 

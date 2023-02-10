@@ -1,14 +1,12 @@
 
 public class duplicatecharinstring {
     public static void main(String[] args) {  
-        String string1 = "Great responsibility";  
-        int count;  
-          
-        //Converts given string into character array  
-        char string[] = string1.toCharArray();  
-          
+        String string1 = "Greatresponsibility";  
+        int count=0; 
+        int n=string1.length();       
+        char a[] = string1.toCharArray();  
+        /*  
         System.out.println("Duplicate characters in a given string: ");  
-        //Counts each character present in the string  
         for(int i = 0; i <string.length; i++) {  
             count = 1;  
             for(int j = i+1; j <string.length; j++) {  
@@ -21,7 +19,19 @@ public class duplicatecharinstring {
             //A character is considered as duplicate if count is greater than 1  
             if(count > 1 && string[i] != '0')  
                 System.out.println(string[i]);  
-        }  
+        } 
+        */
+        
+        for(int i=0;i<n;i++) {
+        	for(int j=i+1;j<n;j++)
+        	{
+        		if(a[i]==a[j]) {
+        			System.out.print(a[j]);
+        			count++;
+        			break;
+        		}
+        	}
+        }
     }  
 
 }

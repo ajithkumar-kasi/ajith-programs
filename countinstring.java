@@ -7,10 +7,17 @@ public class countinstring {
 		String a="I am ajith kumar";
 		int count=0;
 		char[] s=a.toCharArray();
-		for(int i=0;i<s.length;i++) {
+		/*for(int i=0;i<s.length;i++) {
 			count++;
 		}
 		System.out.println(count);
+	*/
+		for(int i=0;i<s.length;i++) {
+			if(s[i]=='a')
+			count++;
+		}
+		System.out.println(count+" time is 'a' arrived  ");
+	
 	}
 
 }

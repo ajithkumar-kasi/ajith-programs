@@ -1,7 +1,7 @@
 
 public class reversestringrecursion {
 
-	public String reverseString(String str)  
+	/*public String reverseString(String str)  
 	{  
 	if(str.isEmpty())  
 	{  
@@ -27,5 +27,10 @@ public class reversestringrecursion {
 	System.out.println(resultantSting1);  
 	System.out.println(resultantSting2);  
 	System.out.println(resultantSting3);   
+	*/
+	public static void main(String[] args) {
+		String s="i am ajiyth kaumar";
+		
+		System.out.println(s.isEmpty());
 	}  
 	}  

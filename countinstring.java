@@ -13,11 +13,15 @@ public class countinstring {
 		System.out.println(count);
 	*/
 		for(int i=0;i<s.length;i++) {
+			
 			if(s[i]=='a')
 			count++;
 		}
-		System.out.println(count+" time is 'a' arrived  ");
+		System.out.println(" 'a' arrived  is arrvied "+count+" time ");
 	
+		for(int i=s.length-1;i>=0;i--) {
+			System.out.print(s[i]);
+		}
 	}
 
 }

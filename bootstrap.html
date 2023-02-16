@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap usage</title>
+    <link rel="icon" href="./off.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script>
+    var now=new Date();
+    console.log(now);
+
+    var dob=new Date('1,Jan 2000');
+    console.log(dob);
+    dob=new Date('2000-01-01');
+    console.log(dob);
+
+    console.log(dob.getMilliseconds);
+
+    function sum(n1,n2){
+        return n1+n1;
+
+    }
+    console.log(sum(3,5));
+
+
+
+   </script>
+   <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: bisque;
+            width: 100px;
+            height: 100vh;
+            padding: 10px;
+
+        }
+        ul{
+
+            margin-top: -5px;
+            list-style: none;
+            text-align: center;
+            padding: 10px 0;
+        }
+         a{
+           padding: 20px 0;
+            display: block;
+            font-size: 30px;
+            color:black;
+        }a:hover{
+            color: crimson;
+        }
+        img{
+            width: 75px;
+            height: 75px;
+            background-position: top center;
+            margin: 0 auto;
+            border: 5px solid white;
+            border-radius: 50%;
+
+        }
+        hr{
+            height: 3px;
+            background-color: black;
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <div class="profile">
+            <img src="../../logo.jpg" alt="image">
+        </div>
+        
+        <hr>
+        <ul>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-ambulance" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-windows" aria-hidden="true"></i></a></li>
+          
+        </ul>
+    </nav>
+    <button onclick="window.print()">print</button>
+    
+</body>
+</html>

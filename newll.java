@@ -20,6 +20,13 @@ public class newll {
 		System.out.println("");
 		l.pop();
 		System.out.println(l);
+		l.addFirst(100);
+		l.addLast(200);
+		System.out.println(l);
+		l.removeFirst();
+		System.out.println(l);
+		l.removeLast();
+		System.out.println(l);
 	}
 
 }

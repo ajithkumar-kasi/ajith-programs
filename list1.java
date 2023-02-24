@@ -52,6 +52,36 @@ public class list1 {
 		}
 		
 	}
+	public void delfirst() {
+		node temp=head;
+		if(temp ==null) {
+			return;
+		}else {
+			head=temp.next;
+			temp=null;
+		}
+	}
+public void delatpos(int i) {
+	node temp=head;
+	
+		// TODO Auto-generated method stub
+		if(i>0) {
+			return;
+		}else {
+			for(int j=0;j<i-1;j++) {
+				temp=temp.next;
+			}
+			temp.next=temp.next.next;
+			
+			i--;
+			
+			
+		}
+	}
+
+	
+	
+	
 
 	
 
@@ -69,9 +99,18 @@ public class list1 {
 		l.atbegin(3);
 		l.display();
 		l.atmid(2,78);
+		
 		System.out.println("");
 		l.display();
+		System.out.println("");
+		l.delfirst();
+		l.display();
+		System.out.println("");
+		l.delatpos(2);
+		l.display();
 	}
+
+	
 
 	
 	

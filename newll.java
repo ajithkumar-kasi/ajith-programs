@@ -27,6 +27,8 @@ public class newll {
 		System.out.println(l);
 		l.removeLast();
 		System.out.println(l);
+		l.add(1, 1000);
+		System.out.println(l);
 	}
 
 }

@@ -4,7 +4,7 @@ public class calender {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		while(true) {
+		/*while(true) {
 			Scanner s=new Scanner(System.in);
 			int n=s.nextInt();
 			if(n==1||n==3||n==5||n==7||n==8||n==10||n==12) {
@@ -26,6 +26,23 @@ public class calender {
 				}	
 			}
 		}
+		*/
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		
+		for(int i=1;i<=31;i++) {
+			if((n==4||n==6||n==9||n==11) && i==31) {
+				continue;
+			}
+				
+			System.out.println("Day: "+i);
+			if((n==2)&&i==28) {
+				break;
+			}
+
+		}
+		
+		
 		
 		
 		

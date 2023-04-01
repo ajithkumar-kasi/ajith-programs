@@ -49,7 +49,7 @@ function createPerson(name){
 var ajith=createPerson("ajith");
 ajith.greeting();
 */
-/*
+
 function person(name){
     this.name=name;
     this.greet=function(){
@@ -58,8 +58,8 @@ function person(name){
 }
 const Person1=new person("gopi");
 Person1.greet();
-*/
 
+/*
 const vegtables=[
     {id:1,name:"tomoto",quantity:"1kg"},
     {id:2,name:"cucumber",quantity:"1/5kg"},

@@ -58,7 +58,7 @@ function person(name){
 }
 const Person1=new person("gopi");
 Person1.greet();
-*/
+
 
 const vegtables=[
     {id:1,name:"tomoto",quantity:"1kg"},
@@ -73,3 +73,11 @@ const vegtables=[
 var result=vegtables.find((name)=> name.id=="4");
 
 console.log(result);
+*/
+const a=[1,2,3,4];
+const b=[5,6,7,8,99,0];
+
+const result=a.concat(b);
+const result1=[...a,...b]
+
+console.log(result1);

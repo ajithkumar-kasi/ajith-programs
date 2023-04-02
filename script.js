@@ -73,7 +73,7 @@ const vegtables=[
 var result=vegtables.find((name)=> name.id=="4");
 
 console.log(result);
-*/
+
 const a=[1,2,3,4];
 const b=[5,6,7,8,99,0];
 
@@ -91,3 +91,44 @@ for(let index in daily) {
 daily.forEach(function(routine){
     console.log(routine);
 })
+const s=[2,4,7,9,1];
+
+s.sort(function(a,b){
+    return b-a;
+});
+console.log(s);*/
+
+
+let products=[
+    {id:1,title:"Android",cost:7500},
+    {id:2,title:"Gaming computer",cost:99500},
+    {id:3,title:"Iphone",cost:76500},
+    {id:4,title:"Headphone",cost:1500},
+];
+
+//lowest price
+let lowestprice=products.sort(function(a,b){
+    return a.cost-b.cost;
+
+});
+console.log(lowestprice);
+//title asending
+
+let title=products.sort(function(a,b){
+    if(a.title<b.title){
+        return -1;
+    }
+    else if(a.title>b.title){
+        return 1;
+    }
+    return 0;
+
+});
+console.log(title);
+//filter products less than 8000
+
+let filter=products.filter((item)=>item.cost<8000);
+console.log(filter);
+//map 
+let map=products.map((item)=>item.title+"-"+item.cost);
+console.log(map);

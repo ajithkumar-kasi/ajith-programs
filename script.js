@@ -81,3 +81,13 @@ const result=a.concat(b);
 const result1=[...a,...b]
 
 console.log(result1);
+
+const daily=["wakeup","eat","routine"];
+
+
+for(let index in daily) {
+    console.log(daily[index]);
+}
+daily.forEach(function(routine){
+    console.log(routine);
+})

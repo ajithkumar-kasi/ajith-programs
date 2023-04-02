@@ -96,7 +96,7 @@ const s=[2,4,7,9,1];
 s.sort(function(a,b){
     return b-a;
 });
-console.log(s);*/
+console.log(s);
 
 
 let products=[
@@ -131,4 +131,21 @@ let filter=products.filter((item)=>item.cost<8000);
 console.log(filter);
 //map 
 let map=products.map((item)=>item.title+"-"+item.cost);
-console.log(map);
+console.log(map);*/
+
+
+const s=[34,65,12,7,987,100];
+let sum=0;
+
+for(let value of s){
+    sum=value+sum;
+}
+console.log(sum);
+
+for(let value in s){
+    console.log(s[value]);
+}
+
+let total=s.reduce((prev,curr)=>prev+curr)
+console.log(total);
+

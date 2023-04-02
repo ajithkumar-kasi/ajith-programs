@@ -131,7 +131,7 @@ let filter=products.filter((item)=>item.cost<8000);
 console.log(filter);
 //map 
 let map=products.map((item)=>item.title+"-"+item.cost);
-console.log(map);*/
+console.log(map);
 
 
 const s=[34,65,12,7,987,100];
@@ -148,4 +148,95 @@ for(let value in s){
 
 let total=s.reduce((prev,curr)=>prev+curr)
 console.log(total);
+
+const s=[34,65,12,7,987,100];
+let result=s.sort();
+console.log(result);
+let result1=s.sort((a,b)=>a-b);
+console.log(result1);
+*/
+
+
+//1 array objectv create
+
+const ab1=[{id:1,name:"ajith"},
+{id:2,name:"kumar"}, 
+{id:3,name:"anbu"}];
+console.log(ab1);
+
+let ab2=[];
+ab2[0]={id:1,name:"ajith"};
+ab2[1]={id:1,name:"ajith"};
+ab2[2]={id:3,name:"anbu"};
+console.log(ab2);
+
+let ab3=new Array("hello");
+console.log(ab3);
+let ab4=Array.of("ajith","anbu")
+console.log(ab4);
+
+//2 copy
+let array=[1,2,3,4,5];
+let array2=array.slice();
+console.log(array2);
+
+let array3=[];
+for(let i=0;i<array.length;i++){
+    array3[i]=array[i];
+}
+console.log(array3);
+
+//3 empty array
+array=[];
+//array.length=0;
+//splice
+
+console.log(array);
+//4 type of array
+
+
+const a=[1,2,3,4];
+console.log(typeof a);
+//5
+console.log(Array.isArray(a));
+
+//6
+a.push(55);
+console.log(a);
+//9
+var items=["milk","bread","sugar"]
+
+console.log(items.includes("milk"));
+
+for(let i=0;i<items.length;i++){
+    if(items[i]=="milk"){
+        console.log("Item is in your list");
+        break;
+    }else{
+        console.log("item doesn't exists");
+    }
+}
+
+function check(item){
+    if(items.indexOf(item)==-1){
+        console.log("Item is in your list");
+    }else{
+        console.log("item doesn't exists");
+    }
+}
+check("milk")
+
+//10
+console.log(items.indexOf("milk"));
+
+//console.log(items.splice(1,3));
+items.shift()
+console.log(items);
+
+
+//18 flat
+
+var aaa=[1,[2,3],4,5,[3,4,5,6]];
+
+console.log(aaa.flat());
 

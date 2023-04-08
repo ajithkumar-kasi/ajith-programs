@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-	
+import java.util.*;	
 public class duplicateelement {
 	/*public static int removeduplicates(int a[], int n)
 		{
@@ -11,23 +11,20 @@ public class duplicateelement {
 			// the unique elements
 			int[] temp = new int[n];
 			int j = 0;
-
 			for (int i = 0; i < n - 1; i++) {
 				if (a[i] != a[i + 1]) {
 					temp[j++] = a[i];
 				}
 			}
-
 			temp[j++] = a[n - 1];
-
+			
 			// Changing the original array
+			
 			for (int i = 0; i < j; i++) {
 				a[i] = temp[i];
 			}
-
 			return j;
 		}*/
-	
 	
 	
 	
@@ -132,34 +129,20 @@ public class duplicateelement {
 		}  
 	*/
 	
-	
+
 	 public static void main(String[] args)
 	    {
 	 
-	        int arr[] = { 12, 11, 40, 12, 5, 6, 5, 12, 11 };
-	        int n = arr.length;
-	       
+	      Integer arr[] = {12, 11, 40, 12, 5, 6, 5, 12, 11};
+	      List<Integer> a=new ArrayList<Integer>();
+	      a.addAll(Arrays.asList(arr));    
+	      Set<Integer> dup=new HashSet<Integer>(a);
+	      List<Integer> b=new ArrayList<Integer>(dup);
+	      System.out.println(b);
+	     
 	        
-	        int a[]=new int[10];
-	        
-	        for(int i=0;i<n;i++) {
-	        	for(int j=i+1;j<n;j++) {
-	        		if(a[i]==a[j]) {
-	        			break;
-	        		}else {
-	        			a[i]=arr[i];
-	        		}
-	        		
-	        	}
-	        }for(int x:a) {
-	        	 System.out.println(x);
 	        }
-	       
-	    
-	    
-	    
-	    
-	    }}
+	    }
 	
 	
 	

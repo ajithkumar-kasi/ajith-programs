@@ -133,16 +133,37 @@ public class duplicateelement {
 	 public static void main(String[] args)
 	    {
 	 
-	      Integer arr[] = {12, 11, 40, 12, 5, 6, 5, 12, 11};
-	      List<Integer> a=new ArrayList<Integer>();
+	      int arr[] = {12, 11, 40, 12, 5, 6, 5, 12, 11};
+	     /* List<Integer> a=new ArrayList<Integer>();
 	      a.addAll(Arrays.asList(arr));    
 	      Set<Integer> dup=new HashSet<Integer>(a);
 	      List<Integer> b=new ArrayList<Integer>(dup);
 	      System.out.println(b);
-	     
-	        
-	        }
-	    }
+	     */
+	      int b[]=new int[10];
+	      int index=0;
+	      for(int i=0;i<arr.length;i++){
+	    	  int flag=0;
+	    	  for(int j=0;j<i;j++) {
+	    		  if(arr[i]==arr[j]) {
+	    			  flag=1;
+	    			  break;
+	    		  }
+	    	  }
+	    	  if(flag==0) {
+	    		  b[index]=arr[i];
+	    		  index++;
+	    		  
+	    	  }
+	      }
+	      for(int k=0;k<index;k++){
+	    	  System.out.println(b[k]);
+	    	  
+	      }
+	      
+	          
+     }	 
+}
 	
 	
 	
